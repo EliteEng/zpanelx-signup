@@ -163,7 +163,6 @@ class webservice extends ws_xmws {
 		$contenttags 	= $this->XMLDataToArray($request_data['content']);
 
 		$row = module_controller::ApiPackage($contenttags['pk_id']);
-
 		$response = ws_xmws::NewXMLTag('package', 	
 			ws_xmws::NewXMLTag('name',$row['pk_name_vc']).
 			ws_xmws::NewXMLTag('id', $row['pk_id_pk']).

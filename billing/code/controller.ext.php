@@ -734,8 +734,7 @@ static function getEmail() {
             FROM x_packages a
               LEFT JOIN x_rb_price b
                 ON a.pk_id_pk = b.pk_id
-                AND b.pkp_hosting IS NOT NULL OR b.pkp_domain IS NOT NULL
-            WHERE a.pk_id_pk = ? AND a.pk_deleted_ts IS NULL
+                WHERE a.pk_id_pk = ? AND a.pk_deleted_ts IS NULL
         ");
         $stmt->execute(array($pk_id));
         return $stmt->fetch();

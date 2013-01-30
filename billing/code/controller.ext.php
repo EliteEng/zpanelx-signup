@@ -953,7 +953,6 @@ static function getEmail() {
         $sql->bindParam(':ac_id_pk', $client['ac_id_pk']);
         $sql->execute();
 		
-		
 		// Lets create the client diectories
         fs_director::CreateDirectory(ctrl_options::GetSystemOption('hosted_dir') . $username);
         fs_director::SetFileSystemPermissions(ctrl_options::GetSystemOption('hosted_dir') . $username, 0777);
@@ -964,8 +963,6 @@ static function getEmail() {
             
         runtime_hook::Execute('OnAfterCreateClient');
         self::$username = $username;
-        self::$resetform = true;
-        self::$ok = true;
         return true;
     }
 

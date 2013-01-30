@@ -8,7 +8,7 @@
  * @license GPL (http://www.gnu.org/licenses/gpl.html)
  */
 error_reporting(E_ERROR);
-include ('lib/functions.php');
+require_once('lib/functions.php');
 
 $id = (isset($_GET['id'])) ? $_GET['id'] : "";
 $head = null;
@@ -204,7 +204,7 @@ if(!empty($package_name)){
 	$payoption 	= null;
 
 	foreach($payoptions['hosting'] as $option){
-		$payoption .= "<input type=\"radio\" name=\"payperiod\" value=\"".$option['month']."\">".$option['month']." month @ ".$cs." ".$option['price']."</input><br />";
+		$payoption .= "<input type=\"radio\" name=\"payperiod\" value=\"".$option['month']."\">".$option['month']." month @ ".$cs." ".zpanelx::getConfig('currency_symbol').$option['price']."</input><br />";
 	}
 	//Insert values to template
 	$template = file_get_contents('themes/billing.tpl');

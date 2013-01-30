@@ -89,9 +89,7 @@ if (isset($_POST['submit'])) {
 		}
 	}
 
-    //TODO: re-enable Captcha
-	//disabling captcha for dev purpose
-	/*if (empty($captcha_response) || empty($captcha_challenge)) {
+    	if (empty($captcha_response) || empty($captcha_challenge)) {
 		zpanelx::error("Captcha Challenge is missing");
 	} else {
           //$privatekey = getConfig('rc_private_key');
@@ -100,7 +98,7 @@ if (isset($_POST['submit'])) {
           if (!$resp->is_valid) {
             zpanelx::error("Captcha Challenge is not valid");
           }
-	}*/
+	}
 
 	//is the username already used?
 	$data = "<username>".$username."</username>";

@@ -6,8 +6,8 @@ class zConfig {
 	public $test = true; //false for NOT
 	public $DEBUG = true; //false disable
 	
-   	static $zpanel_api = 'API_KEY_HERE'; // API Key can be found in your zpanel database
-   	static $zpanel_url = 'localhost'; //or IP/URL of zpanel server
+   	static $zpanel_api = 'c40f5a84e3a8acf1ca0f1a2d1726af6bfb317ce5'; // API Key can be found in your zpanel database
+   	static $zpanel_url = 'zpdev.ballen.co.uk'; //or IP/URL of zpanel server
    	public $use_ssl = 'false';
 	
     //Database connection
@@ -20,19 +20,19 @@ class zConfig {
    	static $mysql_pass = '';
 	
 	//Recaptcha keys
-	public $rc_public_key = ''; //recaptcha public key
-	public $rc_private_key = ''; //recaptcha private key
+	public $rc_public_key = '6LfkgdwSAAAAAOg7qx7UJRhGW0JwUIBUh4h1kIG0'; //recaptcha public key
+	public $rc_private_key = '6LfkgdwSAAAAAE8q3C8ctvQ59JHBBxZY7yepD8fK'; //recaptcha private key
 
     //Config
    	public $server_cfg;
 
 	//Email settings
-	public $error_email = '';
-	public $error_emailName = '';
+	public $error_email = 'bobbyallen.uk@gmail.com';
+	public $error_emailName = 'Bobby Allen';
 
 
 	//Locale Settings
-	public $currency_symbol = '$';
+	public $currency_symbol = '&pound;';
 	
 	/**
 	* Using this will override user.reseller_id in reseller_billing. 

@@ -13,7 +13,7 @@
 						<input type="text" name="fullname" value="{{fullname}}" placeholder="Full Name">
 						<textarea name="address" cols="25" placeholder="Address">{{address}}</textarea>
 						<input type="number" name="postcode" size="20" value="{{postcode}}" placeholder="Postcode">
-						<input type="tel" name="telephone" value="{{telephone}} placeholder="Telephone">
+						<input type="tel" name="telephone" value="{{telephone}}" placeholder="Telephone">
 					</div>
 				</div>
 			</div>

@@ -3,13 +3,17 @@
 class zConfig {
 
 	
-	public $test = true; //false for NOT
+	public $test = true; //true will enable Paypal Sandbox
 	public $DEBUG = true; //false disable
 	
-   	static $zpanel_api = 'c40f5a84e3a8acf1ca0f1a2d1726af6bfb317ce5'; // API Key can be found in your zpanel database
-   	static $zpanel_url = 'zpdev.ballen.co.uk'; //or IP/URL of zpanel server
+   	static $zpanel_api = ''; // API Key can be found in your zpanel database
+   	static $zpanel_url = ''; //or IP/URL of zpanel server
    	public $use_ssl = 'false';
 	
+	public $theme = 'default'; //themes are in a subdirectory in the themes folder
+	public $control_panel = ''; //external url to your Zpanel installation you have to include 'http://' or 'https://'
+	public $webmail_url = ''; //external url to your Webmail you have to include 'http://' or 'https://'
+	public $company = ''; //Your webhosting Comany Name
     //Database connection
     /* The database connection is only needed if the API key is not set
 	 * For security reason the less place you have to have your database credentials in plain text the better
@@ -20,19 +24,18 @@ class zConfig {
    	static $mysql_pass = '';
 	
 	//Recaptcha keys
-	public $rc_public_key = '6LfkgdwSAAAAAOg7qx7UJRhGW0JwUIBUh4h1kIG0'; //recaptcha public key
-	public $rc_private_key = '6LfkgdwSAAAAAE8q3C8ctvQ59JHBBxZY7yepD8fK'; //recaptcha private key
+	public $rc_public_key = ''; //recaptcha public key
+	public $rc_private_key = ''; //recaptcha private key
 
     //Config
    	public $server_cfg;
 
 	//Email settings
-	public $error_email = 'bobbyallen.uk@gmail.com';
-	public $error_emailName = 'Bobby Allen';
-
+	public $error_email = '';
+	public $error_emailName = ''; // Displayed Name on the error email
 
 	//Locale Settings
-	public $currency_symbol = '&pound;';
+	public $currency_symbol = '$'; //for Pounds use '&pound;' , for Yen use '&yen;' , for Euro use '&euro;'
 	
 	/**
 	* Using this will override user.reseller_id in reseller_billing. 
@@ -69,6 +72,4 @@ class zConfig {
 	    }
 	}
 	 */
-
-
 }

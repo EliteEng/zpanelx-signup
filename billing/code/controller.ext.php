@@ -363,7 +363,7 @@ class module_controller {
                     'qsubdomain' => $row['qt_subdomains_in'],
                     'qparkdomain' => $row['qt_parkeddomains_in'],
                     'qmailboxes' => $row['qt_mailboxes_in'],
-                    'qforwarders' => $row['qt_forwarders_in'],
+                    'qforwarders' => $row['qt_fowarders_in'],
                     'qdistlist' => $row['qt_distlists_in'],
                     'qftp' => $row['qt_ftpaccounts_in'],
                     'qmysql' => $row['qt_mysql_in'],

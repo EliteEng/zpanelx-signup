@@ -1,13 +1,11 @@
-Zpanelx Auto Signup
-=========
-This is a module for Zpanelx that open up for User signup with API integration.
+#ZPanelCP Billing Module
 
-Installation
-=========
+* Version: 10.0.5
+* [Website](http://forums.zpanelcp.com/Thread-PS2Guy-s-Modules?pid=48855#pid48855)
 
-http://forums.zpanelcp.com/showthread.php?7687-TESTING-Auto-signup-%28Zpanelx%29&p=61194#post61194
+##Description
 
-License
-=========
-GPL v.3 or never
+This an auto billing module for ZPanelCP.
 
+ZPanel is an open-source web hosting control panel written in PHP and is compatible
+with Microsoft Windows and POSIX (Linux, UNIX, MacOSX and the BSD's).

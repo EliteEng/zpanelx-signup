@@ -1,7 +1,7 @@
 #Zaus Billing Software for [ZPanelCP](http://www.zpanelcp.com)
 
 * Version: 10.0.5
-* [Website](http://zpanelbilling.github.io)
+* [Website](http://jigsaw-hosting.github.io/zaus)
 * [Support](http://forums.zpanelcp.com/Thread-PS2Guy-s-Modules?pid=48855#pid48855)
 
 ##Description
